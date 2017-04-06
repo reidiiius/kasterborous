@@ -1,5 +1,6 @@
+#!/usr/bin/octave -qf
 
-% include
+% includes
 
 rassilon;
 

@@ -1,6 +1,6 @@
 #!/usr/bin/octave -qf
 
-% include
+% includes
 
 tardis;
 

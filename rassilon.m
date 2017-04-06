@@ -1,3 +1,4 @@
+#!/usr/bin/octave -qf
 
       Rod(1).j2 = 'HgHg PuFe ____ ____ CuNp PbAu ____ AuPb ____ AgUr ____ FePu ';
       Rod(1).j3 = 'HgSn ____ SnHg UrFe ____ PbAg ____ AuAu ____ AgPb ____ FeUr ';
