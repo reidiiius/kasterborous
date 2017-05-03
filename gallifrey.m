@@ -10,7 +10,9 @@ disp ('');
 
 % latinBass (Rod(1));
 
-sesquialterum (Rod(2));
+% sesquialterum (Rod(2));
+
+ hexGuitar (Rod(3));
 
 disp ('');
 

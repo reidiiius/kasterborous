@@ -52,42 +52,42 @@ rassilon;
     rtv = [qp(31:end), qp(1:30)];
   endfunction
 
-% hanzi strings
+% hex strings
 
-  function rtv = zhBj (qp)
-    rtv = [qp(71:end), qp(1:70)];
+  function rtv = hxBj (qp)
+    rtv = [qp(31:end), qp(1:30)];
   endfunction
 
-  function rtv = zhFn (qp)
-    rtv = [qp(36:end), qp(1:35)];
+  function rtv = hxFn (qp)
+    rtv = [qp(16:end), qp(1:15)];
   endfunction
 
-  function rtv = zhCn (qp)
+  function rtv = hxCn (qp)
     rtv = qp;
   endfunction
 
-  function rtv = zhGn (qp)
-    rtv = [qp(50:end), qp(1:49)];
+  function rtv = hxGn (qp)
+    rtv = [qp(22:end), qp(1:21)];
   endfunction
 
-  function rtv = zhDn (qp)
-    rtv = [qp(15:end), qp(1:14)];
+  function rtv = hxDn (qp)
+    rtv = [qp( 7:end), qp(1: 6)];
   endfunction
 
-  function rtv = zhAn (qp)
-    rtv = [qp(64:end), qp(1:63)];
+  function rtv = hxAn (qp)
+    rtv = [qp(28:end), qp(1:27)];
   endfunction
 
-  function rtv = zhEn (qp)
-    rtv = [qp(29:end), qp(1:28)];
+  function rtv = hxEn (qp)
+    rtv = [qp(13:end), qp(1:12)];
   endfunction
 
-  function rtv = zhBn (qp)
-    rtv = [qp(78:end), qp(1:77)];
+  function rtv = hxBn (qp)
+    rtv = [qp(34:end), qp(1:33)];
   endfunction
 
-  function rtv = zhFk (qp)
-    rtv = [qp(43:end), qp(1:42)];
+  function rtv = hxFk (qp)
+    rtv = [qp(19:end), qp(1:18)];
   endfunction
 
 % latin tunings
@@ -132,46 +132,46 @@ rassilon;
     press (svFk (qp));
   endfunction
 
-% hanzi tunings
+% hex tunings
 
-  function zhBEADGCF (ks, qp)
-    press ([ks, '-beadgcf-zh', chronotis]);
-    press (zhFn (qp));
-    press (zhCn (qp));
-    press (zhGn (qp));
-    press (zhDn (qp));
-    press (zhAn (qp));
-    press (zhEn (qp));
-    press (zhBn (qp));
+  function hxBEADGCF (ks, qp)
+    press ([ks, '-beadgcf-hx', chronotis]);
+    press (hxFn (qp));
+    press (hxCn (qp));
+    press (hxGn (qp));
+    press (hxDn (qp));
+    press (hxAn (qp));
+    press (hxEn (qp));
+    press (hxBn (qp));
   endfunction
 
-  function zhCGDAE (ks, qp)
-    press ([ks, '-cgdae-zh', chronotis]);
-    press (zhEn (qp));
-    press (zhAn (qp));
-    press (zhDn (qp));
-    press (zhGn (qp));
-    press (zhCn (qp));
+  function hxCGDAE (ks, qp)
+    press ([ks, '-cgdae-hx', chronotis]);
+    press (hxEn (qp));
+    press (hxAn (qp));
+    press (hxDn (qp));
+    press (hxGn (qp));
+    press (hxCn (qp));
   endfunction
 
-  function zhEADGBE (ks, qp)
-    press ([ks, '-eadgbe-zh', chronotis]);
-    press (zhEn (qp));
-    press (zhBn (qp));
-    press (zhGn (qp));
-    press (zhDn (qp));
-    press (zhAn (qp));
-    press (zhEn (qp));
+  function hxEADGBE (ks, qp)
+    press ([ks, '-eadgbe-hx', chronotis]);
+    press (hxEn (qp));
+    press (hxBn (qp));
+    press (hxGn (qp));
+    press (hxDn (qp));
+    press (hxAn (qp));
+    press (hxEn (qp));
   endfunction
 
-  function zhFkBjDn (ks, qp)
-    press ([ks, '-fkbjdn-zh', chronotis]);
-    press (zhDn (qp));
-    press (zhBj (qp));
-    press (zhFk (qp));
-    press (zhDn (qp));
-    press (zhBj (qp));
-    press (zhFk (qp));
+  function hxFkBjDn (ks, qp)
+    press ([ks, '-fkbjdn-hx', chronotis]);
+    press (hxDn (qp));
+    press (hxBj (qp));
+    press (hxFk (qp));
+    press (hxDn (qp));
+    press (hxBj (qp));
+    press (hxFk (qp));
   endfunction
 
 % idiododecaphony
@@ -233,32 +233,32 @@ endfunction
     endfor
   endfunction
 
-% hanzi loops
+% hex loops
 
-  function hanziBass (qp)
+  function hexBass (qp)
     for [v, k] = qp
-      zhBEADGCF (k, v);
+      hxBEADGCF (k, v);
       disp ('');
     endfor
   endfunction
 
-  function hanziCello (qp)
+  function hexCello (qp)
     for [v, k] = qp
-      zhCGDAE (k, v);
+      hxCGDAE (k, v);
       disp ('');
     endfor
   endfunction
 
-  function hanziGuitar (qp)
+  function hexGuitar (qp)
     for [v, k] = qp
-      zhEADGBE (k, v);
+      hxEADGBE (k, v);
       disp ('');
     endfor
   endfunction
 
-  function hanziMaj3rds (qp)
+  function hexMaj3rds (qp)
     for [v, k] = qp
-      zhFkBjDn (k, v);
+      hxFkBjDn (k, v);
       disp ('');
     endfor
   endfunction
