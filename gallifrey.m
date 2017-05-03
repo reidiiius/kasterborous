@@ -8,7 +8,11 @@ tardis;
 
 disp ('');
 
-latinBass (Rod(1));
+% latinBass (Rod(1));
+
+sesquialterum (Rod(2));
+
+disp ('');
 
 % cleanup
 

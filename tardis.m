@@ -174,6 +174,35 @@ rassilon;
     press (zhFk (qp));
   endfunction
 
+% idiododecaphony
+
+function rtv = gankogui (qp)
+  rtv = [
+    [qp( 6:end), qp(1: 5)];
+    [qp( 1:end)];
+    [qp( 8:end), qp(1: 7)];
+    [qp( 3:end), qp(1: 2)];
+    [qp(10:end), qp(1: 9)];
+    [qp( 5:end), qp(1: 4)];
+    [qp(12:end), qp(1:11)];
+    [qp( 7:end), qp(1: 6)];
+    [qp( 2:end), qp(1: 1)];
+    [qp( 9:end), qp(1: 8)];
+    [qp( 4:end), qp(1: 3)];
+    [qp(11:end), qp(1:10)]
+  ];
+endfunction
+
+% idiophone loops
+
+  function sesquialterum (qp)
+    for [v, k] = qp
+      disp ([k, '-CXLIV-bn', chronotis]);
+      disp (gankogui (v));
+      disp ('');
+    endfor
+  endfunction
+
 % latin loops
 
   function latinBass (qp)
