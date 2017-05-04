@@ -12,7 +12,9 @@ disp ('');
 
 % sesquialterum (Rod(2));
 
- hexGuitar (Rod(3));
+% hexGuitar (Rod(3));
+
+ sesquialterum (Rod(4));
 
 disp ('');
 
