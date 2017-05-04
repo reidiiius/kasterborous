@@ -14,7 +14,9 @@ disp ('');
 
 % hexGuitar (Rod(3));
 
- sesquialterum (Rod(4));
+% sesquialterum (Rod(4));
+
+ sesquialterum (Rod(5));
 
 disp ('');
 
